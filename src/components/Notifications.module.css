@@ -1,0 +1,60 @@
+.notifications{
+    width: 100%; 
+    height: 100%; 
+    padding: 1rem; 
+    display: flex; 
+    flex-direction: column; 
+    gap: .5rem; 
+    max-width: 40rem; 
+}
+
+.head{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 1rem; 
+}
+.title{
+    font-size: 1.2rem; 
+    font-weight: 800; 
+    color: var(--c800); 
+    display: inline-block; 
+    margin-right: .5rem;
+
+}
+
+.unreadNotifications{
+    color: var(--c-white); 
+    background-color: var(--c-blue);
+    display: inline-block;  
+    padding: .1rem .8rem; 
+    border-radius: 10px; 
+    font-weight: 800; 
+    font-size: 1rem; 
+}
+
+.markRead{
+    color: var(--c600);
+    cursor: pointer; 
+}
+
+.markRead:hover{
+font-weight: 800; 
+color: var(--c-blue); 
+}
+
+.markRead:active{
+    font-weight: 800; 
+color: var(--c-blue); 
+    scale: .98; 
+}
+
+@media (min-width: 750px) {
+    .notifications{
+        margin: 2rem auto 1rem; 
+        box-shadow: 0 10px 20px rgba(2, 63, 87, 0.059);
+        border-radius: 10px; 
+        background-color: var(--c-white);
+        padding: 2rem 1rem; 
+    }
+}
